@@ -1,0 +1,15 @@
+egrep -c ‘(svm|vmx)’ /proc/cpuinfo
+
+make sure it returns a number larger than zero.
+
+then install KVM and supported packages.
+
+sudo apt-get install qemu-kvm libvirt-bin bridge-utils virt-manager
+
+add your own user to libvirtd group 
+
+sudo adduser name libvirtd
+
+run virt-manager GUI to create a new VM or import an existing image to it.
+
+https://www.howtogeek.com/117635/how-to-install-kvm-and-create-virtual-machines-on-ubuntu/
